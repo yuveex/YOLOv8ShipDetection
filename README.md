@@ -221,4 +221,6 @@ This project was developed as part of my undergraduate thesis to address challen
 ## License
 This project is licensed under the MIT License.
 
+> Note: This project uses a model trained on the Airbus Ship Detection dataset provided by Kaggle. The dataset is subject to Kaggle’s terms of use and is not redistributed here.
+
 ---
