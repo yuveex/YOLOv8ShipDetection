@@ -14,6 +14,8 @@ A web-based application that allows users to upload images and detects ships usi
 - [Project Motivation](#project-motivation)
 - [License](#license)
 
+---
+
 ## Demo
 
 > Here are some snapshots to demonstrate the project's functionality.
@@ -25,6 +27,8 @@ A web-based application that allows users to upload images and detects ships usi
   ![Detection Result 1](assets/img/resultPage1.png)
   ![Detection Result 2](assets/img/resultPage2.png)
 
+---
+
 ## Features
 
 - Upload from any browser
@@ -33,36 +37,55 @@ A web-based application that allows users to upload images and detects ships usi
 - Lightweight Flask backend
 - Modular architecture for extensibility
 
+---
+
 ## Tech stack
 
+The project is structured in three main layers:
+
+| Layer    | Technology                     |
+|----------|--------------------------------|
+| Frontend | HTML, CSS, Bootstrap           |
+| Backend  | Python, Flask                  |
+| Model    | Python, YOLOv8 (Ultralytics)   |
+
+<details>
+<summary>Show Tech Stack Badges</summary>
+
+<br>
+
 <table>
-    <tr>
-        <th>Layer</th>
-        <th>Technology</th>
-    </tr>
-    <tr>
-        <td>Frontend</td>
-        <td>
-            <img src="https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=white&style=for-the-badge"/>
-            <img src="https://img.shields.io/badge/CSS-663399?logo=css&logoColor=white&style=for-the-badge"/>
-            <img src="https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white&style=for-the-badge"/>
-        </td>
-    </tr>
-    <tr>
-        <td>Backend</td>
-        <td>
-            <img src="https://img.shields.io/badge/Python-yellow?logo=python&style=for-the-badge"/>
-            <img src="https://img.shields.io/badge/Flask-3BABC3?logo=flask&logoColor=white&style=for-the-badge"/>
-        </td>
-    </tr>
-    <tr>
-        <td>Model</td>
-        <td>
-            <img src="https://img.shields.io/badge/Python-yellow?logo=python&style=for-the-badge"/>
-            <img src="https://img.shields.io/badge/YOLOv8-111F68?logo=yolo&logoColor=white&style=for-the-badge"/>
-        </td>
-    </tr>
+  <tr>
+    <th>Layer</th>
+    <th>Technology</th>
+  </tr>
+  <tr>
+    <td>Frontend</td>
+    <td>
+      <img src="https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=white&style=for-the-badge"/>
+      <img src="https://img.shields.io/badge/CSS-663399?logo=css&logoColor=white&style=for-the-badge"/>
+      <img src="https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white&style=for-the-badge"/>
+    </td>
+  </tr>
+  <tr>
+    <td>Backend</td>
+    <td>
+      <img src="https://img.shields.io/badge/Python-yellow?logo=python&style=for-the-badge"/>
+      <img src="https://img.shields.io/badge/Flask-3BABC3?logo=flask&logoColor=white&style=for-the-badge"/>
+    </td>
+  </tr>
+  <tr>
+    <td>Model</td>
+    <td>
+      <img src="https://img.shields.io/badge/Python-yellow?logo=python&style=for-the-badge"/>
+      <img src="https://img.shields.io/badge/YOLOv8-111F68?logo=yolo&logoColor=white&style=for-the-badge"/>
+    </td>
+  </tr>
 </table>
+
+</details>
+
+---
 
 ## Project Architecture
 
@@ -92,6 +115,8 @@ YOLOv8ShipDetection/
 
 > Note: The frontend HTML files are served via a web server, and are not rendered by Flask. Only the API call is routed through Flask.
 
+---
+
 ## Flow
 
 Below is a diagram to show the project flow
@@ -116,6 +141,7 @@ Browser
 
 ```
 
+---
 
 ## Installation
 
@@ -127,7 +153,6 @@ This project must be deployed on a web server that supports both PHP and Python.
 - PHP 7.x+
 - Flask
 - Web server environment (e.g., Apache via XAMPP/LAMP)
-- YOLOv8 weights (e.g., yolov8m.pt)
 
 ---
 
@@ -172,6 +197,8 @@ This project must be deployed on a web server that supports both PHP and Python.
 
  > Note: Ensure both Apache (for HTML + PHP) and the Flask server are running simultaneously.
 
+ ---
+
 ## Model Details
 
 - Model: [YOLOv8 by Ultralytics](https://docs.ultralytics.com/models/yolov8/) (medium variant)
@@ -185,9 +212,15 @@ This project must be deployed on a web server that supports both PHP and Python.
   - mAP@50: 0.841
   - mAP@50:95: 0.605
 
+---
+
 ## Project Motivation
 
 This project was developed as part of my undergraduate thesis to address challenges in automated ship detection using deep learning. The goal was to build an accessible, web-based tool that demonstrates the application of YOLOv8 to real-world maritime datasets.
 
+---
+
 ## License
 This project is licensed under the MIT License.
+
+---
