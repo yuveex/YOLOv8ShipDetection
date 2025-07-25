@@ -34,8 +34,6 @@ A web-based application that allows users to upload images and detects ships usi
 - Upload from any browser
 - Performs ship detection using YOLOv8
 - Displays annotated results with labeled bounding boxes and object coordinates
-- Lightweight Flask backend
-- Modular architecture for extensibility
 
 ---
 
